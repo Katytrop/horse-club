@@ -15,6 +15,7 @@
 .container
 	max-width: 1440px
 	margin: 0 auto
+	//border: 1px solid blue
 a
 	text-decoration: none
 	color: #000
@@ -23,36 +24,27 @@ ul, ol, li
 img
 	vertical-align: top
 
-.hamburger
-	position: absolute
-	top: 11%
-	right: 10%
+.burger
 	height: 30px
+	width: 77px
 	display: none
-	flex-direction: column
 	justify-content: space-between
-	align-items: flex-end
-	z-index: 100
+	align-items: center
+	padding: 5px
+	border: 1px solid $green
+	border-radius: 3px
+	&__wrapper
+		height: 12px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
 	span
-		position: absolute
 		display: block
-		width: 40px
-		height: 3px
-		background: #fff
+		width: 10px
+		height: 2px
+		background: $green
+		margin-right: 5px
 		transition: 0.5s all
-	span.short
-		top: -15px
-		&.active
-			transform: rotate(45deg)
-			top: 0
-	span.short2
-		top: 15px
-		&.active
-			transform: rotate(-45deg)
-			top: 0
-	span.long 
-		&.active
-			display: none
 
 .divider
 	height: 3px
