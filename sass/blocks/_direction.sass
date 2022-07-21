@@ -1,0 +1,55 @@
+.direction
+	position: relative
+	padding: 100px 0 200px 0
+	background: url(../assets/img/direction-bg.jpg) center center/cover no-repeat
+	&__wrapper
+		margin-top: 75px
+		display: grid
+		grid-template: minmax(400px, 475px) / repeat(3, 370px)
+		justify-content: center
+		gap: 30px
+	&__item
+		border: 1px solid #EAEAEA
+		box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.07)
+		border-radius: 5px
+		text-align: center
+		background-color: #fff
+		width: 100%
+		&:nth-child(odd)
+			height: 400px
+		&:nth-child(even)
+			height: 474px
+		&:nth-child(4)
+			margin-top: -60px
+		&:nth-child(6)
+			margin-top: -60px
+		&:nth-child(5)
+			margin-top: 15px
+		&_photo
+			margin-top: -25px
+		&_title
+			margin: 0 auto
+			margin-top: 45px
+			font-size: 23px
+			font-weight: 500
+			width: 80%
+		&_descr
+			margin: 0 auto
+			margin-top: 25px
+			font-size: 15px
+			color: $descr-color
+			width: 80%
+			line-height: 20px
+.boy, .girl, .cloud
+	position: absolute
+	bottom: 0
+.boy
+	right: 0
+	width: 270px
+	height: 400px
+.girl
+	left: 0
+	width: 255px
+	height: 445px
+.cloud
+	width: 100%

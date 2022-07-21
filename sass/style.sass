@@ -1,0 +1,91 @@
+@import 'base/_variables'
+@import 'base/_mixins'
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	font-family: 'Philosopher', sans-serif
+	font-family: 'Roboto', sans-serif
+	font-size: 18px
+	font-weight: 400
+	color: #000
+	//border: 1px solid blue
+	
+.container
+	max-width: 1440px
+	margin: 0 auto
+	//border: 1px solid blue
+a
+	text-decoration: none
+	color: #000
+ul, ol, li
+	list-style: none
+img
+	vertical-align: top
+
+.burger
+	height: 30px
+	width: 77px
+	display: none
+	justify-content: space-between
+	align-items: center
+	padding: 5px
+	border: 1px solid $green
+	border-radius: 3px
+	&__wrapper
+		height: 12px
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+	span
+		display: block
+		width: 10px
+		height: 2px
+		background: $green
+		margin-right: 5px
+		transition: 0.5s all
+
+.divider
+	height: 3px
+	width: 65px
+	background-color: $green
+	margin: 0 auto
+	margin-top: 25px
+	&_mini
+		width: 26px
+		height: 1px
+	&_map
+		margin: 0
+		margin-top: 30px
+
+.pageup
+	position: fixed
+	bottom: 40px
+	right: 15px
+	width: 40px
+	height: 40px
+	cursor: pointer
+	display: none
+	&_show
+		display: block
+		svg
+			fill: $green
+			&:hover
+				border-radius: 100% 
+				border: 2px solid $orange
+
+@import 'blocks/_promo'
+@import 'blocks/_buttons'
+@import 'blocks/_title'
+@import 'blocks/_about'
+@import 'blocks/_choice'
+@import 'blocks/_direction'
+@import 'blocks/_gallery'
+@import 'blocks/_horses'
+@import 'blocks/_questions'
+@import 'blocks/_feed'
+@import 'blocks/_map'
+@import 'blocks/_footer'
+
+@import 'base/_media'
