@@ -59,6 +59,22 @@ img
 		margin: 0
 		margin-top: 30px
 
+.pageup
+	position: fixed
+	bottom: 40px
+	right: 15px
+	width: 40px
+	height: 40px
+	cursor: pointer
+	display: none
+	&_show
+		display: block
+		svg
+			fill: $green
+			&:hover
+				border-radius: 100% 
+				border: 2px solid $orange
+
 @import 'blocks/_promo'
 @import 'blocks/_buttons'
 @import 'blocks/_title'

@@ -1,14 +1,19 @@
 .gallery
 	padding-top: 100px
 	&__wrapper
+		margin: 0 auto
 		margin-top: 70px
+		width: 1200px
 		overflow: hidden
 	&__slider
+		position: relative
+		left: 0
 		width: 1920px
 		display: grid
 		grid-template-columns: 321px 144px 220px 96px 369px 320px 95px 320px 
 		grid-template-rows: repeat(2, 300px)
 		gap: 5px
+		transition: all ease 1s
 	&__img
 		width: 100%
 		height: 100%
